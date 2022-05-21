@@ -1,0 +1,35 @@
+{
+  "name": "trpc-node-websockets-test",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel start-**",
+    "start-api": "node -r @swc-node/register ./service1.ts",
+    "start-updates": "node -r @swc-node/register ./service2.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darkle/tRPC-node-websockets-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darkle/tRPC-node-websockets-test/issues"
+  },
+  "homepage": "https://github.com/Darkle/tRPC-node-websockets-test#readme",
+  "dependencies": {
+    "@swc-node/register": "^1.5.1",
+    "@trpc/client": "^9.23.4",
+    "@trpc/server": "^9.23.4",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.16.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.6.4",
+    "ws": "^8.6.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.3"
+  }
+}

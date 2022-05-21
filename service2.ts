@@ -10,7 +10,6 @@ import type { ApiRPC } from './service1'
 setTimeout(() => {
   const apiRPCCwsClient = createWSClient({
     url: `ws://localhost:3000`,
-    // @ts-expect-error
     WebSocket,
   })
 
